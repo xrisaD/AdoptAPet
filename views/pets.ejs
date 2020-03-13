@@ -1,1 +1,8 @@
 <h1> Pets ejs </h1>
+
+<% pets.forEach(function(pet) { %>
+	<div>
+		<h4> <%= pet.name %> </h4>
+		<img src="<%= pet.image %>"> 
+	</div>
+<% }) %>

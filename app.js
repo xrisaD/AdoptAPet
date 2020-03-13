@@ -7,7 +7,12 @@ app.get("/" , function(req , res){
 });
 
 app.get("/pets" , function(req, res) {
-	res.render("pets");
+	var pets = [
+		{name : "Suzie" , image : ""},
+		{name : "Max" , image : ""},
+		{name : "Rex" , image : ""}
+	]; 
+	res.render("pets", {pets : pets});
 });
 
 

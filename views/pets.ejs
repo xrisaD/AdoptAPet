@@ -1,12 +1,26 @@
 <%- include("partials/header") %>
-<h1> Pets ejs </h1>
+<div class="container"> 
+	<header class="jumbotron">
+		<div class="container">
+			<h1> Adopt A Pet !</h1>
+			<p> Give your love to an adorable soul !</p>
+			<p>
+			<a class="btn btn-primary" href="/pets/new">Add a new pet</a>
+			</p>
+		</div>
+	</header>
 
-<a href="/pets/new">Add a new pet</a>
-
-<% pets.forEach(function(pet) { %>
-	<div>
-		<h4> <%= pet.name %> </h4>
-		<img src="<%= pet.image %>" width=800 height=> 
+	<div class="row">
+		<% pets.forEach(function(pet) { %>
+			<div class="col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<h4> <%= pet.name %> </h4>
+					<img src="<%= pet.image %>" > 
+				</div>
+			</div>
+		<% }) %>
 	</div>
-<% }) %>
+
+	
+</div>
 <%- include("partials/footer") %>

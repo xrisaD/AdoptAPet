@@ -1,0 +1,10 @@
+<%- include('partials/header') -%>
+<h1>Add a new pet</h1>
+
+<form action="/pets" method="POST">
+	<input type="text" name="name" placeholder="name">
+	<input type="text" name="image" placeholder="imageurl">
+	<button> Submit </button>
+</form>
+<a href="/pets">Go back</a>
+<%- include('partials/footer') -%>

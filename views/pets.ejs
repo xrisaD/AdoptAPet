@@ -1,6 +1,8 @@
 <%- include("partials/header") %>
 <h1> Pets ejs </h1>
 
+<a href="/pets/new">Add a new pet</a>
+
 <% pets.forEach(function(pet) { %>
 	<div>
 		<h4> <%= pet.name %> </h4>

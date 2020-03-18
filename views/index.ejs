@@ -10,8 +10,7 @@
 		</div>
 	</header>
 	
-	<div class="row text-center" style="display:flex; flex-wrap:wrap;">
-		
+	<div class="row text-center" style="display:flex; flex-wrap:wrap;">		
 		<% pets.forEach(function(pet) { %>
 			<div class="col-md-3 col-sm-6">
 					<div class="thumbnail" style="height: 300px;width: 200px;">
@@ -20,7 +19,9 @@
 							<h4> <%= pet.name %> </h4>
 						</div>
 					</div>
-				
+					<p>
+						<a href="/pets/<%= pet._id%>" class="btn btn-primary">More Info</a>
+					</p>
 			</div>
 		<% }) %>
 		
